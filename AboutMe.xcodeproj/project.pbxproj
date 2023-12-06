@@ -11,7 +11,12 @@
 		D15454142B200C0600C52C03 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15454132B200C0600C52C03 /* ContentView.swift */; };
 		D15454162B200C0700C52C03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D15454152B200C0700C52C03 /* Assets.xcassets */; };
 		D15454192B200C0700C52C03 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D15454182B200C0700C52C03 /* Preview Assets.xcassets */; };
-		D198DD9A2B20E2DB004C5D50 /* Model in Resources */ = {isa = PBXBuildFile; fileRef = D198DD992B20E2DB004C5D50 /* Model */; };
+		D198DDA62B20E53B004C5D50 /* PictureAndNameHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D198DDA52B20E53B004C5D50 /* PictureAndNameHeader.swift */; };
+		D198DDAA2B20E5DE004C5D50 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = D198DDA92B20E5DE004C5D50 /* Person.swift */; };
+		D198DDAC2B20E8AF004C5D50 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D198DDAB2B20E8AF004C5D50 /* ProfileView.swift */; };
+		D198DDAE2B20EA25004C5D50 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = D198DDAD2B20EA25004C5D50 /* Project.swift */; };
+		D198DDB02B20EBEE004C5D50 /* ProjectDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D198DDAF2B20EBEE004C5D50 /* ProjectDetailView.swift */; };
+		D198DDB22B20ED4C004C5D50 /* DataHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D198DDB12B20ED4C004C5D50 /* DataHolder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,11 +25,12 @@
 		D15454132B200C0600C52C03 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D15454152B200C0700C52C03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D15454182B200C0700C52C03 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		D198DD992B20E2DB004C5D50 /* Model */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Model; sourceTree = "<group>"; };
-		D198DD9C2B20E2E5004C5D50 /* ProjectDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetailView.swift; sourceTree = "<group>"; };
-		D198DD9D2B20E2E5004C5D50 /* ProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeader.swift; sourceTree = "<group>"; };
-		D198DD9E2B20E2E5004C5D50 /* PersonDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailView.swift; sourceTree = "<group>"; };
-		D198DD9F2B20E2E5004C5D50 /* PhotosGallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosGallery.swift; sourceTree = "<group>"; };
+		D198DDA52B20E53B004C5D50 /* PictureAndNameHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PictureAndNameHeader.swift; path = ../../../../../PictureAndNameHeader.swift; sourceTree = "<group>"; };
+		D198DDA92B20E5DE004C5D50 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Person.swift; path = ../../../../../Person.swift; sourceTree = "<group>"; };
+		D198DDAB2B20E8AF004C5D50 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileView.swift; path = ../../../../../ProfileView.swift; sourceTree = "<group>"; };
+		D198DDAD2B20EA25004C5D50 /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Project.swift; path = ../../../../../Project.swift; sourceTree = "<group>"; };
+		D198DDAF2B20EBEE004C5D50 /* ProjectDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProjectDetailView.swift; path = ../../../../../ProjectDetailView.swift; sourceTree = "<group>"; };
+		D198DDB12B20ED4C004C5D50 /* DataHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DataHolder.swift; path = ../../../../../DataHolder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,8 +65,8 @@
 			children = (
 				D15454112B200C0600C52C03 /* AboutMeApp.swift */,
 				D15454132B200C0600C52C03 /* ContentView.swift */,
-				D198DD992B20E2DB004C5D50 /* Model */,
-				D198DD9B2B20E2E5004C5D50 /* View */,
+				D198DDA82B20E5CD004C5D50 /* Model */,
+				D198DDA42B20E529004C5D50 /* Views */,
 				D15454152B200C0700C52C03 /* Assets.xcassets */,
 				D15454172B200C0700C52C03 /* Preview Content */,
 			);
@@ -75,15 +81,24 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		D198DD9B2B20E2E5004C5D50 /* View */ = {
+		D198DDA42B20E529004C5D50 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				D198DD9C2B20E2E5004C5D50 /* ProjectDetailView.swift */,
-				D198DD9D2B20E2E5004C5D50 /* ProfileHeader.swift */,
-				D198DD9E2B20E2E5004C5D50 /* PersonDetailView.swift */,
-				D198DD9F2B20E2E5004C5D50 /* PhotosGallery.swift */,
+				D198DDA52B20E53B004C5D50 /* PictureAndNameHeader.swift */,
+				D198DDAB2B20E8AF004C5D50 /* ProfileView.swift */,
+				D198DDAF2B20EBEE004C5D50 /* ProjectDetailView.swift */,
 			);
-			path = View;
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D198DDA82B20E5CD004C5D50 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D198DDA92B20E5DE004C5D50 /* Person.swift */,
+				D198DDB12B20ED4C004C5D50 /* DataHolder.swift */,
+				D198DDAD2B20EA25004C5D50 /* Project.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,7 +159,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D198DD9A2B20E2DB004C5D50 /* Model in Resources */,
 				D15454192B200C0700C52C03 /* Preview Assets.xcassets in Resources */,
 				D15454162B200C0700C52C03 /* Assets.xcassets in Resources */,
 			);
@@ -159,6 +173,12 @@
 			files = (
 				D15454142B200C0600C52C03 /* ContentView.swift in Sources */,
 				D15454122B200C0600C52C03 /* AboutMeApp.swift in Sources */,
+				D198DDAC2B20E8AF004C5D50 /* ProfileView.swift in Sources */,
+				D198DDB22B20ED4C004C5D50 /* DataHolder.swift in Sources */,
+				D198DDAA2B20E5DE004C5D50 /* Person.swift in Sources */,
+				D198DDA62B20E53B004C5D50 /* PictureAndNameHeader.swift in Sources */,
+				D198DDAE2B20EA25004C5D50 /* Project.swift in Sources */,
+				D198DDB02B20EBEE004C5D50 /* ProjectDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +320,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -329,6 +350,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
