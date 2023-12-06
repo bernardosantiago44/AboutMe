@@ -17,6 +17,7 @@
 		D198DDBC2B20F25B004C5D50 /* PictureAndNameHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D198DDB92B20F25B004C5D50 /* PictureAndNameHeader.swift */; };
 		D198DDBD2B20F25B004C5D50 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D198DDBA2B20F25B004C5D50 /* ProfileView.swift */; };
 		D198DDBE2B20F25B004C5D50 /* ProjectDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D198DDBB2B20F25B004C5D50 /* ProjectDetailView.swift */; };
+		D198DDC22B20F335004C5D50 /* PhotosCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D198DDC12B20F335004C5D50 /* PhotosCarousel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		D198DDB92B20F25B004C5D50 /* PictureAndNameHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureAndNameHeader.swift; sourceTree = "<group>"; };
 		D198DDBA2B20F25B004C5D50 /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		D198DDBB2B20F25B004C5D50 /* ProjectDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectDetailView.swift; sourceTree = "<group>"; };
+		D198DDC12B20F335004C5D50 /* PhotosCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCarousel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 				D198DDB92B20F25B004C5D50 /* PictureAndNameHeader.swift */,
 				D198DDBA2B20F25B004C5D50 /* ProfileView.swift */,
 				D198DDBB2B20F25B004C5D50 /* ProjectDetailView.swift */,
+				D198DDC12B20F335004C5D50 /* PhotosCarousel.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 				D15454142B200C0600C52C03 /* ContentView.swift in Sources */,
 				D198DDBD2B20F25B004C5D50 /* ProfileView.swift in Sources */,
 				D15454122B200C0600C52C03 /* AboutMeApp.swift in Sources */,
+				D198DDC22B20F335004C5D50 /* PhotosCarousel.swift in Sources */,
 				D198DDBC2B20F25B004C5D50 /* PictureAndNameHeader.swift in Sources */,
 				D198DDB62B20F22D004C5D50 /* Project.swift in Sources */,
 				D198DDB82B20F232004C5D50 /* DataHolder.swift in Sources */,

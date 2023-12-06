@@ -8,11 +8,28 @@
 import SwiftUI
 
 struct PhotosCarousel: View {
+    let photoNames: [String]
+    var urls: [URL] {
+        photoNames.map({ URL(string: $0) ??
+            URL(string: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Image_not_available.png/640px-Image_not_available.png")! })
+    }
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        TabView {
+            ForEach(urls, id: \.absoluteString) { url in
+                AsyncImage(url: url) { image in
+                    image.resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .clipShape(RoundedRectangle(cornerRadius: 15))
+                } placeholder: {
+                    ProgressView()
+                }
+            }
+        }
+        .tabViewStyle(.page(indexDisplayMode: .always))
     }
 }
 
 #Preview {
-    PhotosCarousel()
+    PhotosCarousel(photoNames: Person.myProfile.photoURLs)
 }

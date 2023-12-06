@@ -46,6 +46,14 @@ struct ProfileView: View {
                 }
             })
             .padding(.horizontal)
+            
+            Divider()
+            LeadingAlignedText(text: "Photos")
+                .font(.headline)
+            
+            PhotosCarousel(photoNames: self.person.photoURLs)
+                .frame(height: 400)
+                .padding(.horizontal)
         }
     }
 }
@@ -62,5 +70,5 @@ struct LeadingAlignedText: View {
 }
 
 #Preview {
-    ProfileView(person: Person.myProfile)
+    ContentView()
 }
