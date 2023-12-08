@@ -8,18 +8,20 @@
 import SwiftUI
 
 struct ProfileView: View {
-    let person: Person
+    @ObservedObject var dataHolder: DataHolder
     let columns: [GridItem] = Array(repeating: .init(.flexible()), count: 2)
+    
+    @State private var editingHobby = false
     
     var body: some View {
         VStack {
-            PictureAndNameHeader(person: self.person)
+            PictureAndNameHeader(person: self.dataHolder.person)
             
             LeadingAlignedText(text: "Hobbies")
                 .font(.headline)
             
             LazyVGrid(columns: self.columns, content: {
-                ForEach(person.hobbies, id: \.self) { hobby in
+                ForEach(self.dataHolder.person.hobbies, id: \.self) { hobby in
                     GroupBox{
                         Text(hobby)
                             .frame(maxWidth: .infinity)
@@ -34,7 +36,7 @@ struct ProfileView: View {
                 .font(.headline)
             
             LazyVGrid(columns: self.columns, content: {
-                ForEach(person.projects) { project in
+                ForEach(self.dataHolder.person.projects) { project in
                     NavigationLink {
                         ProjectDetailView(project: project)
                     } label: {
@@ -51,7 +53,7 @@ struct ProfileView: View {
             LeadingAlignedText(text: "Photos")
                 .font(.headline)
             
-            PhotosCarousel(photoNames: self.person.photoURLs)
+            PhotosCarousel(photoNames: self.dataHolder.person.photoURLs)
                 .frame(height: 400)
                 .padding(.horizontal)
         }
@@ -70,5 +72,5 @@ struct LeadingAlignedText: View {
 }
 
 #Preview {
-    ContentView()
+    ContentView(dataHolder: DataHolder())
 }

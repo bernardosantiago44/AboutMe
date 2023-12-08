@@ -8,10 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var dataHolder: DataHolder
+    
     var body: some View {
         NavigationStack {
             ScrollView {
-                ProfileView(person: Person.myProfile)
+                ProfileView(dataHolder: self.dataHolder)
                     .navigationTitle("My profile")
             }
         }
@@ -19,5 +21,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    ContentView(dataHolder: DataHolder())
 }

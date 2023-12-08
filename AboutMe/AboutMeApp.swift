@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct AboutMeApp: App {
+    @StateObject var dataHolder = DataHolder()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(dataHolder: self.dataHolder)
         }
     }
 }

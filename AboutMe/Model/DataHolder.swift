@@ -8,6 +8,6 @@
 import Foundation
 
 final class DataHolder: ObservableObject {
-    var person: Person = Person.myProfile
+    @Published var person: Person = Person.myProfile
     
 }
