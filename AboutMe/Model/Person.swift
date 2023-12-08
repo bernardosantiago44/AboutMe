@@ -26,7 +26,7 @@ struct Person {
 
 extension Person {
     static let myProfile = Person(name: "Bernardo Santiago", profilePicture: "profilePicture",
-                                  hobbies: ["Coding", "Teaching", "Reading", "Running"],
+                                  hobbies: ["Coding", "Teaching", "Reading", "Developing in SwiftUI"],
                                   projects: Project.exampleProjects, 
                                   photos: ["https://avatars.githubusercontent.com/u/63428964?v=4",
                                            "https://i.postimg.cc/Nj6MwxjB/IMG-6215.jpg",

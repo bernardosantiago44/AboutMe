@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D14245722B239AA000E62A7C /* EqualHeightBoxes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14245712B239AA000E62A7C /* EqualHeightBoxes.swift */; };
 		D15454122B200C0600C52C03 /* AboutMeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15454112B200C0600C52C03 /* AboutMeApp.swift */; };
 		D15454142B200C0600C52C03 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15454132B200C0600C52C03 /* ContentView.swift */; };
 		D15454162B200C0700C52C03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D15454152B200C0700C52C03 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D14245712B239AA000E62A7C /* EqualHeightBoxes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EqualHeightBoxes.swift; sourceTree = "<group>"; };
 		D154540E2B200C0600C52C03 /* AboutMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AboutMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D15454112B200C0600C52C03 /* AboutMeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeApp.swift; sourceTree = "<group>"; };
 		D15454132B200C0600C52C03 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 			children = (
 				D198DDB92B20F25B004C5D50 /* PictureAndNameHeader.swift */,
 				D198DDBA2B20F25B004C5D50 /* ProfileView.swift */,
+				D14245712B239AA000E62A7C /* EqualHeightBoxes.swift */,
 				D1ACCD672B216A13007FAB42 /* EditHobbyView.swift */,
 				D198DDBB2B20F25B004C5D50 /* ProjectDetailView.swift */,
 				D198DDC12B20F335004C5D50 /* PhotosCarousel.swift */,
@@ -183,6 +186,7 @@
 				D198DDC22B20F335004C5D50 /* PhotosCarousel.swift in Sources */,
 				D198DDBC2B20F25B004C5D50 /* PictureAndNameHeader.swift in Sources */,
 				D1ACCD682B216A13007FAB42 /* EditHobbyView.swift in Sources */,
+				D14245722B239AA000E62A7C /* EqualHeightBoxes.swift in Sources */,
 				D198DDB62B20F22D004C5D50 /* Project.swift in Sources */,
 				D198DDB82B20F232004C5D50 /* DataHolder.swift in Sources */,
 				D198DDB42B20F223004C5D50 /* Person.swift in Sources */,

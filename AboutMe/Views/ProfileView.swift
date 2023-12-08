@@ -20,15 +20,7 @@ struct ProfileView: View {
             LeadingAlignedText(text: "Hobbies")
                 .font(.headline)
             
-            LazyVGrid(columns: self.columns, content: {
-                ForEach(self.dataHolder.person.hobbies, id: \.self) { hobby in
-                    GroupBox{
-                        Text(hobby)
-                            .frame(maxWidth: .infinity)
-                    }
-                }
-            })
-            .padding(.horizontal)
+            EqualHeightBoxes()
             
             Divider()
             
